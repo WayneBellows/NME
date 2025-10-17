@@ -95,7 +95,7 @@ powershell -ExecutionPolicy Bypass -File $scriptPath -Type Remove -Version 64
 
 ## 🪪 Auto-generated XML (for reference)
 ### Multi-session
-'''xml
+```xml
 <Configuration>
   <Add Channel="MonthlyEnterprise"></Add>
   <RemoveMSI />
