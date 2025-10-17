@@ -83,3 +83,12 @@ powershell -ExecutionPolicy Bypass -File $scriptPath -Type Remove -Version 64
 ```powershell
 .\Install-M365Apps.ps1 -Type Remove -Version 64 | Tee-Object -FilePath "C:\Temp\OfficeInstall.log"
 ```
+
+## 🧰 Output and Cleanup
+
+- Console logs include timestamps and progress messages.
+
+- Temporary artifacts are removed automatically:
+
+  - C:\Temp\<GUID>
+  - C:\AVDImage (if created)
