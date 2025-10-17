@@ -1,6 +1,6 @@
 <#
   Author: Wayne Bellows)
-  Source: https://github.com/NME/InstallM365Apps
+  Source: https://github.com/NME/ScriptedActions/InstallM365Apps
 
   Enhancements:
   - Auto-detect Windows edition to choose single-session vs multi-session behavior.
