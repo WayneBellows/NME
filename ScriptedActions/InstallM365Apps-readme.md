@@ -104,7 +104,7 @@ powershell -ExecutionPolicy Bypass -File $scriptPath -Type Remove -Version 64
   <Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
   <Property Name="SharedComputerLicensing" Value="1" />
 </Configuration>
-
+```
 ### Single-session
 ```xml
 <Configuration>
@@ -114,3 +114,4 @@ powershell -ExecutionPolicy Bypass -File $scriptPath -Type Remove -Version 64
   <Display Level="None" AcceptEULA="TRUE" />
   <Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
 </Configuration>
+```
