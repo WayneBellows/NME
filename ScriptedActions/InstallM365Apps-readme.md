@@ -115,3 +115,12 @@ powershell -ExecutionPolicy Bypass -File $scriptPath -Type Remove -Version 64
   <Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
 </Configuration>
 ```
+Change the update Channel (e.g., Monthly, MonthlyEnterprise) in the script if desired.
+
+## 🧩 System Requirements
+- Windows 10/11 Enterprise or Enterprise multi-session
+- PowerShell 5.1+ (or PowerShell 7.x)
+- Internet access to:
+  - https://www.microsoft.com/download/details.aspx?id=49117
+  - https://download.microsoft.com/*
+Run PowerShell as Administrator.
