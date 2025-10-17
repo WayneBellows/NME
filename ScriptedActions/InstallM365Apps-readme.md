@@ -123,4 +123,14 @@ Change the update Channel (e.g., Monthly, MonthlyEnterprise) in the script if de
 - Internet access to:
   - https://www.microsoft.com/download/details.aspx?id=49117
   - https://download.microsoft.com/*
-Run PowerShell as Administrator.
+- Run PowerShell as Administrator.
+
+## 🔎 Verifications
+### Check OS type:
+```powershell
+(Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion').ProductName
+```
+### Check Shared Computer Activation:
+```powershell
+(Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Office\ClickToRun\Configuration').SharedComputerLicensing
+```
