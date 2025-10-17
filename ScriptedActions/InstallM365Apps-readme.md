@@ -92,3 +92,16 @@ powershell -ExecutionPolicy Bypass -File $scriptPath -Type Remove -Version 64
 
   - C:\Temp\<GUID>
   - C:\AVDImage (if created)
+
+## 🪪 Auto-generated XML (for reference)
+### Multi-session
+'''xml
+<Configuration>
+  <Add Channel="MonthlyEnterprise"></Add>
+  <RemoveMSI />
+  <Updates Enabled="FALSE" />
+  <Display Level="None" AcceptEULA="TRUE" />
+  <Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
+  <Property Name="SharedComputerLicensing" Value="1" />
+</Configuration>
+'''
