@@ -105,3 +105,12 @@ powershell -ExecutionPolicy Bypass -File $scriptPath -Type Remove -Version 64
   <Property Name="SharedComputerLicensing" Value="1" />
 </Configuration>
 
+### Single-session
+```xml
+<Configuration>
+  <Add Channel="MonthlyEnterprise"></Add>
+  <RemoveMSI />
+  <Updates Enabled="TRUE" />
+  <Display Level="None" AcceptEULA="TRUE" />
+  <Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
+</Configuration>
