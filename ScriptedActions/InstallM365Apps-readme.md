@@ -48,6 +48,7 @@ It automatically detects whether the VM is running a **single-session** or **mul
 Installs Word, Excel, PowerPoint, Outlook, OneNote, Access, and Publisher.
 ```powershell
 .\Install-M365Apps.ps1 -Type Remove -Version 64
+```
 
 ### 2) Exclude specific apps (e.g., Outlook and Publisher)
 ```powershell
