@@ -53,18 +53,22 @@ Installs Word, Excel, PowerPoint, Outlook, OneNote, Access, and Publisher.
 ### 2) Exclude specific apps (e.g., Outlook and Publisher)
 ```powershell
 .\Install-M365Apps.ps1 -Applications @("Outlook", "Publisher") -Type Remove -Version 64
+```
 
 ### 3) Add Visio only
 ```powershell
 .\Install-M365Apps.ps1 -Applications @("Visio") -Type Add -Version 64
+```
 
 ### 4) Add both Visio and Project
 ```powershell
 .\Install-M365Apps.ps1 -Applications @("Visio", "Project") -Type Add -Version 64
+```
 
 ### 5) Run directly from GitHub (no download)
 ```powershell
 iex "& { $(Invoke-RestMethod 'https://raw.githubusercontent.com/<your-username>/<your-repo>/main/scripts/Install-M365Apps.ps1') } -Type Remove -Version 64"
+```
 
 ### 6) Download and run locally
 ```powershell
@@ -73,7 +77,9 @@ $scriptPath = "$env:TEMP\Install-M365Apps.ps1"
 
 Invoke-WebRequest -Uri $scriptUrl -OutFile $scriptPath
 powershell -ExecutionPolicy Bypass -File $scriptPath -Type Remove -Version 64
+```
 
 ### 7) Run with logging
 ```powershell
 .\Install-M365Apps.ps1 -Type Remove -Version 64 | Tee-Object -FilePath "C:\Temp\OfficeInstall.log"
+```
